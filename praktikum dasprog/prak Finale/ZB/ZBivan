@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+#define ll long long
+
+ll test = 1000000007;
+
+ll gcd(ll a, ll b){ 
+	if(a==0) return b;
+	return gcd(b%a, a);
+}
+ll powpowan(ll a, ll b){
+    if (b == 0) return 1;
+    ll kembali = powpowan(a,b/2);
+    kembali = (kembali*kembali)%test;
+    if(b&1) kembali = (a*kembali)%test;
+    return kembali;
+} 
+void hitungMungkin(ll N, ll M){
+	ll total = 0;
+	for (ll i = 0; i < N; i++) { 
+        ll k = gcd(i, N);
+		total = (total + powpowan(M,k))%test;
+	}
+	total = (total*powpowan(N,test-2))%test;;
+	printf("%lld", total);
+}
+
+int main(){
+    ll N,M;
+    scanf("%lld %lld", &N, &M);
+	hitungMungkin(N, M);
+	return 0;
+}

@@ -1,0 +1,11 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "algorithm": "c",
+        "stdio.h": "c",
+        "sstream": "c",
+        "array": "c",
+        "string": "c",
+        "random": "c"
+    }
+}

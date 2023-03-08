@@ -1,0 +1,1 @@
+{"name":"Local: BFS","url":"c:\\MATKUL ITS\\DASAR PEMOGRAMAN\\praktikum dasprog\\prak Finale\\BFS\\BFS.c","tests":[{"id":1669977731883,"input":"3 10\n0 20\n3 37\n9 5","output":"1\n3\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\MATKUL ITS\\DASAR PEMOGRAMAN\\praktikum dasprog\\prak Finale\\BFS\\BFS.c","group":"local","local":true}
